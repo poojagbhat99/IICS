@@ -1,0 +1,71 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>gqzm5Y6tMFyglsO-gt-3051659-2023-11-08T15:28:07.611Z::pd.xml</types1:EntryId>
+      <types1:Name>soap_api</types1:Name>
+      <types1:MimeType>application/xml+process</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags>.anonymous</types1:Tags>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>smithbobforu@gmail.com</types1:CreatedBy>
+      <types1:CreationDate>2023-11-08T15:28:08Z</types1:CreationDate>
+      <types1:ModifiedBy>smithbobforu@gmail.com</types1:ModifiedBy>
+      <types1:ModificationDate>2023-11-08T15:28:25Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>smithbobforu@gmail.com</types1:PublishedBy>
+      <types1:PublicationDate>2023-11-08T15:28:29Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/spi.soap_api/soap_api.pd.xml</types1:PublishedContributionId>
+      <types1:AutosaveExists>false</types1:AutosaveExists>
+      <types1:Entry>
+         <process xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                  xmlns:tfm="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"
+                  xmlns:list="urn:activevos:spi:list:functions"
+                  displayName="soap_api"
+                  name="soap_api"
+                  overrideAPIName="false">
+            <parameterSet xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"/>
+            <appliesTo/>
+            <description/>
+            <tags>.anonymous</tags>
+            <generator>Informatica Process Designer 11</generator>
+            <input>
+               <parameter description="" name="name" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+            </input>
+            <output>
+               <field description="" name="message" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+            </output>
+            <notes/>
+            <deployment skipIfRunning="false" suspendOnFault="false" tracingLevel="none">
+               <rest>
+                  <allowAnonymousAccess/>
+               </rest>
+            </deployment>
+            <flow id="a">
+               <start id="b">
+                  <link id="lopwwm8l" targetId="lopwwm8k"/>
+               </start>
+               <assignment id="lopwwm8k">
+                  <title>Assignment to message</title>
+                  <operation source="constant" to="output.message">{$input.name}</operation>
+                  <link id="lopwwm8m" targetId="c"/>
+               </assignment>
+               <end id="c"/>
+            </flow>
+         </process>
+      </types1:Entry>
+      <types1:GUID>dauPUxP3a0EikeMe36rruj</types1:GUID>
+      <types1:DisplayName>soap_api</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2023-11-10T04:36:14.515Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

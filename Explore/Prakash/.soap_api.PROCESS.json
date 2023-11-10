@@ -1,0 +1,25 @@
+{
+  "objectInfo" : {
+    "id" : "dauPUxP3a0EikeMe36rruj",
+    "name" : "soap_api",
+    "type" : "PROCESS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "gqzm5Y6tMFyglsO-gt-3051659-2023-11-08T15:28:07.611Z::pd.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2023-11-10T04:36:15.589Z",
+  "objectRefs" : [ ]
+}

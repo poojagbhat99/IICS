@@ -1,0 +1,25 @@
+{
+  "objectInfo" : {
+    "id" : "34qcglgYrjVjOZPWOa3s6K",
+    "name" : "Portal_Guide",
+    "type" : "GUIDE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "FBGZkL0jmu6lS01-gt-1998088-2023-11-02T05:44:54.504Z::gt.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2023-11-10T04:36:15.589Z",
+  "objectRefs" : [ ]
+}

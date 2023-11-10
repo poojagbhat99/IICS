@@ -1,0 +1,261 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>FBGZkL0jmu6lS01-gt-1998088-2023-11-02T05:44:54.504Z::gt.xml</types1:EntryId>
+      <types1:Name>Portal_Guide</types1:Name>
+      <types1:MimeType>application/xml+screenflow</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo>Salesforce:Account</types1:AppliesTo>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>smithbobforu@gmail.com</types1:CreatedBy>
+      <types1:CreationDate>2023-11-02T05:44:55Z</types1:CreationDate>
+      <types1:ModifiedBy>smithbobforu@gmail.com</types1:ModifiedBy>
+      <types1:ModificationDate>2023-11-02T06:36:28Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>smithbobforu@gmail.com</types1:PublishedBy>
+      <types1:PublicationDate>2023-11-02T06:36:37Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/sf.Portal_Guide/Portal_Guide.xml</types1:PublishedContributionId>
+      <types1:AutosaveExists>false</types1:AutosaveExists>
+      <types1:Entry>
+         <avosScreenflow xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                         xmlns:list="urn:activevos:spi:list:functions"
+                         allowRestart="true"
+                         displayName="Portal_Guide"
+                         doneOnEndStep="false"
+                         name="Portal_Guide"
+                         runAsUser="$current">
+            <description/>
+            <appliesTo>Salesforce:Account</appliesTo>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <tempFields>
+               <field description="" name="Name" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="Email" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="Phone" type="int">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="OTP" type="int">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+            </tempFields>
+            <runOn target="desktop"/>
+            <notes/>
+            <deployment/>
+            <sendFeedback>
+               <emailTo/>
+            </sendFeedback>
+            <flow>
+               <startScreen id="jd300kk3">
+                  <title>Start</title>
+                  <body contentType="text/html"/>
+                  <actions>
+                     <action alt="" id="jd300kk3_logrhmsq" targetScreen="logrhmsq">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+                  <screenData skipIfRequiredFilled="true"/>
+               </startScreen>
+               <screen id="logrhmsq">
+                  <title>Welcome screen</title>
+                  <body contentType="text/html">&lt;p&gt;Welcome to Nous Portal...!!&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Are you new to portal ?&lt;/p&gt;</body>
+                  <actionPrompt/>
+                  <actions>
+                     <action alt="" id="logrhmsq_logrhmtc" targetScreen="logrhmtc">
+                        <text>Yes</text>
+                     </action>
+                     <action alt="" id="logrhmsq_logrhmua" targetScreen="logrhmua">
+                        <text>No</text>
+                     </action>
+                  </actions>
+               </screen>
+               <screen id="logrhmtc">
+                  <title>Register</title>
+                  <body contentType="text/html">&lt;table style="border-collapse: collapse; width: 100%;" cellpadding="5"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="width: 48.7075%;"&gt;Name&lt;/td&gt;
+&lt;td style="width: 48.7075%;"&gt;&lt;input class="" name="temp.Name" type="text" value="Name (temporary)"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width: 48.7075%;"&gt;Email&lt;/td&gt;
+&lt;td style="width: 48.7075%;"&gt;&lt;input name="temp.Email" type="text" value="Email (temporary)"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width: 48.7075%;"&gt;Phone&lt;/td&gt;
+&lt;td style="width: 48.7075%;"&gt;&lt;input name="temp.Phone" type="text" value="Phone (temporary)"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</body>
+                  <actionPrompt/>
+                  <actions>
+                     <action alt="" id="logrhmtc_logrhmtw" targetScreen="logrhmtw">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+                  <screenData skipIfRequiredFilled="false">
+                     <screenDataItem name="temp.Name"
+                                     readonly="false"
+                                     required="false"
+                                     type="string">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </screenDataItem>
+                     <screenDataItem name="temp.Email"
+                                     readonly="false"
+                                     required="false"
+                                     type="string">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </screenDataItem>
+                     <screenDataItem name="temp.Phone" readonly="false" required="false" type="int">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </screenDataItem>
+                  </screenData>
+               </screen>
+               <screen id="logrhmtw">
+                  <title>Registerd</title>
+                  <body contentType="text/html">&lt;p&gt;Congratulations &lt;input style="-moz-appearance: none; background-color: lightgrey; border: none;" name="temp.Name" readonly="readonly" type="text" value="Name (temporary)"&gt; , you have successfully enrolled !!!&lt;/p&gt;</body>
+                  <actionPrompt/>
+                  <actions>
+                     <action alt="" id="logrhmtw_logrhmsy" targetScreen="logrhmsy">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+                  <screenData skipIfRequiredFilled="false">
+                     <screenDataItem name="temp.Name" readonly="true" required="false" type="string">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </screenDataItem>
+                  </screenData>
+               </screen>
+               <screen id="logrhmua">
+                  <title>Login Page</title>
+                  <body contentType="text/html">&lt;table style="border-collapse: collapse; width: 100%;" cellpadding="5"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="width: 48.7075%;"&gt;Email&lt;/td&gt;
+&lt;td style="width: 48.7075%;"&gt;&lt;input name="temp.Email" type="text" value="Email (temporary)"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width: 48.7075%;"&gt;OTP&lt;/td&gt;
+&lt;td style="width: 48.7075%;"&gt;&lt;input name="temp.OTP" type="text" value="OTP (temporary)"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</body>
+                  <actionPrompt/>
+                  <actions>
+                     <action alt="" id="logrhmua_logrhmvy" targetScreen="logrhmvy">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+                  <screenData skipIfRequiredFilled="false">
+                     <screenDataItem name="temp.Email"
+                                     readonly="false"
+                                     required="false"
+                                     type="string">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </screenDataItem>
+                     <screenDataItem name="temp.OTP" readonly="false" required="false" type="int">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </screenDataItem>
+                  </screenData>
+               </screen>
+               <screen id="logrhmyq">
+                  <title>Home Page</title>
+                  <body contentType="text/html">&lt;p&gt;Hi,&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Welcome back to Nous portal.!&lt;/p&gt;</body>
+                  <actionPrompt/>
+                  <actions>
+                     <action alt="" id="logrhmyq_logrhmw6" targetScreen="logrhmw6">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </screen>
+               <screen id="logrhmx4">
+                  <title>Invalid OTP</title>
+                  <body contentType="text/html">&lt;p&gt;Oops!, Invalid OTP.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Please enter a valid OTP&lt;/p&gt;</body>
+                  <actionPrompt/>
+                  <actions>
+                     <action alt="" id="logrhmx4_logrhmy7" targetScreen="logrhmy7">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </screen>
+               <endScreen id="jd4cwa59">
+                  <title>End</title>
+                  <body contentType="text/html"/>
+                  <redirectTo type="current_object"/>
+                  <screenActionLabel>
+                     <text/>
+                  </screenActionLabel>
+               </endScreen>
+               <empty gatewayType="exclusive" id="logrhmsy">
+                  <actions>
+                     <action alt="" id="logrhmsy_jd4cwa59" targetScreen="jd4cwa59">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </empty>
+               <empty gatewayType="exclusive" id="logrhmw6">
+                  <actions>
+                     <action alt="" id="logrhmw6_logrhmsy" targetScreen="logrhmsy">
+                        <text>Login</text>
+                     </action>
+                  </actions>
+               </empty>
+               <jumpTo id="logrhmy7" targetTitle="Login Page">
+                  <actions>
+                     <action alt="null" id="logrhmy7_logrhmua" targetScreen="logrhmua">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </jumpTo>
+               <dataDecision id="logrhmvy">
+                  <title>OTP</title>
+                  <dataName>temp.OTP</dataName>
+                  <actions>
+                     <action alt="&lt; {4}" id="logrhmvy_logrhmx4" targetScreen="logrhmx4">
+                        <text>Less than {4}</text>
+                     </action>
+                     <action alt="else " id="logrhmvy_logrhmyq" targetScreen="logrhmyq">
+                        <text>Otherwise</text>
+                     </action>
+                  </actions>
+               </dataDecision>
+            </flow>
+         </avosScreenflow>
+      </types1:Entry>
+      <types1:GUID>34qcglgYrjVjOZPWOa3s6K</types1:GUID>
+      <types1:DisplayName>Portal_Guide</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2023-11-10T04:36:14.801Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

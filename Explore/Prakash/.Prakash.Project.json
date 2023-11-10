@@ -1,0 +1,23 @@
+{
+  "objectInfo" : {
+    "id" : "5fhg9xbktv6i62qQ4VU8So",
+    "name" : "Prakash",
+    "type" : "Project",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : null,
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    }
+  },
+  "dataFileExtension" : "json",
+  "updateTime" : "2023-11-10T04:36:15.588Z",
+  "objectRefs" : [ ]
+}

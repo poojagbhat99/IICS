@@ -1,0 +1,23 @@
+{
+  "objectInfo" : {
+    "id" : "aAL3uR8OLY9f8cex054GGy",
+    "name" : "Guides",
+    "type" : "Folder",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : null,
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    }
+  },
+  "dataFileExtension" : "json",
+  "updateTime" : "2023-11-10T04:36:15.588Z",
+  "objectRefs" : [ ]
+}

@@ -1,0 +1,25 @@
+{
+  "objectInfo" : {
+    "id" : "76DA0latQULirVC9WhV4qn",
+    "name" : "Salesforce",
+    "type" : "AI_CONNECTION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "DQeH2PKDC0hCHbf-gt-1695855-2023-10-31T10:32:48.476Z::conn.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2023-11-10T04:36:15.588Z",
+  "objectRefs" : [ ]
+}

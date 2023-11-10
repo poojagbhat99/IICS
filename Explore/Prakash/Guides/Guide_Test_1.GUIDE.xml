@@ -1,0 +1,239 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>YrLWEQT53nQciSr-gt-1322338-2023-10-29T16:15:41.814Z::gt.xml</types1:EntryId>
+      <types1:Name>Guide_Test_1</types1:Name>
+      <types1:MimeType>application/xml+screenflow</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo>Salesforce:Lead</types1:AppliesTo>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>smithbobforu@gmail.com</types1:CreatedBy>
+      <types1:CreationDate>2023-10-29T16:15:42Z</types1:CreationDate>
+      <types1:ModifiedBy>smithbobforu@gmail.com</types1:ModifiedBy>
+      <types1:ModificationDate>2023-10-31T11:20:20Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>smithbobforu@gmail.com</types1:PublishedBy>
+      <types1:PublicationDate>2023-10-31T11:20:23Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/sf.Guide_Test_1/Guide_Test_1.xml</types1:PublishedContributionId>
+      <types1:AutosaveExists>false</types1:AutosaveExists>
+      <types1:Entry>
+         <avosScreenflow xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                         xmlns:list="urn:activevos:spi:list:functions"
+                         allowRestart="true"
+                         displayName="Guide_Test_1"
+                         doneOnEndStep="false"
+                         name="Guide_Test_1"
+                         runAsUser="$current">
+            <description/>
+            <appliesTo>Salesforce:Lead</appliesTo>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <possibleOutcomes>
+               <outcome id="outcome_1698596109226">Lead is Qualified</outcome>
+               <outcome id="outcome_1698596110798">Lead is not Qualified</outcome>
+               <outcome id="outcome_1698596158720">Left Voice Mail</outcome>
+            </possibleOutcomes>
+            <runOn target="desktop"/>
+            <notes/>
+            <deployment/>
+            <sendFeedback>
+               <emailTo/>
+            </sendFeedback>
+            <flow>
+               <startScreen id="jd300kk3">
+                  <title>Start</title>
+                  <body contentType="text/html"/>
+                  <actions>
+                     <action alt="null" id="jd300kk3_lobo1fex" targetScreen="lobo1fex">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+                  <screenData skipIfRequiredFilled="true"/>
+               </startScreen>
+               <screen id="lobo1fex">
+                  <title>Did you talk to this Lead</title>
+                  <body contentType="text/html">&lt;p&gt;Name: &lt;input class="" name="FirstName" type="text" value="First Name"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Company:&amp;nbsp; &lt;input name="Company" type="text" value="Company*"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Phone#:&amp;nbsp; &lt;input name="Phone" type="text" value="Phone"&gt;&amp;nbsp;&lt;/p&gt;</body>
+                  <actionPrompt/>
+                  <actions>
+                     <action alt="null" id="lobo1fex_lobo1fgx" targetScreen="lobo1fgx">
+                        <text>Yes</text>
+                     </action>
+                     <action alt="null" id="lobo1fex_lobo1fgk" targetScreen="lobo1fgk">
+                        <text>No-left voice mail</text>
+                     </action>
+                     <action alt="null" id="lobo1fex_lobo1fgu" targetScreen="lobo1fgu">
+                        <text>Bad Phone Number</text>
+                     </action>
+                  </actions>
+                  <screenData skipIfRequiredFilled="false">
+                     <screenDataItem name="FirstName"
+                                     readonly="false"
+                                     required="false"
+                                     type="string">
+                        <options>
+                           <option name="length">40</option>
+                           <option name="required">false</option>
+                        </options>
+                     </screenDataItem>
+                     <screenDataItem name="Company" readonly="false" required="true" type="string">
+                        <options>
+                           <option name="length">255</option>
+                           <option name="required">true</option>
+                        </options>
+                     </screenDataItem>
+                     <screenDataItem name="Phone" readonly="false" required="false" type="phone">
+                        <options>
+                           <option name="length">40</option>
+                           <option name="required">false</option>
+                        </options>
+                     </screenDataItem>
+                  </screenData>
+               </screen>
+               <screen id="lobo1fj1">
+                  <title>Is this Lead Qualified?</title>
+                  <body contentType="text/html">&lt;p&gt;Is this Lead Qualified?&lt;/p&gt;</body>
+                  <actionPrompt/>
+                  <actions>
+                     <action alt="null" id="lobo1fj1_lobo1fjv" targetScreen="lobo1fjv">
+                        <text>Yes</text>
+                     </action>
+                     <action alt="null" id="lobo1fj1_lobo1fj9" targetScreen="lobo1fj9">
+                        <text>No</text>
+                     </action>
+                  </actions>
+               </screen>
+               <screen id="lobo1fko">
+                  <title>Convert Lead?</title>
+                  <body contentType="text/html">&lt;p&gt;Do you want to convert the Lead?&lt;/p&gt;</body>
+                  <actionPrompt/>
+                  <actions>
+                     <action alt="null" id="lobo1fko_lobo1flj" targetScreen="lobo1flj">
+                        <text>Yes</text>
+                     </action>
+                     <action alt="null" id="lobo1fko_lobo1fmz" targetScreen="lobo1fmz">
+                        <text>No</text>
+                     </action>
+                  </actions>
+               </screen>
+               <service id="lobo1flj">
+                  <title>Convert qualified lead</title>
+                  <serviceName>Salesforce:sfConvertLeadService</serviceName>
+                  <serviceGUID>76DA0latQULirVC9WhV4qn</serviceGUID>
+                  <actions>
+                     <action alt="null" id="lobo1flj_lobo1fkx" targetScreen="lobo1fkx">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </service>
+               <endScreen id="lobo1ffy" outcomeId="outcome_1698596109226">
+                  <title>Lead id Qualified</title>
+                  <body contentType="text/html">&lt;p&gt;Lead id Qualified&lt;/p&gt;</body>
+                  <redirectTo type="current_object"/>
+                  <screenActionLabel>
+                     <text>Done</text>
+                  </screenActionLabel>
+               </endScreen>
+               <endScreen id="lobo1fgk" outcomeId="outcome_1698596158720">
+                  <title>Left voice Mail</title>
+                  <body contentType="text/html">&lt;p&gt;Left voice Mail&lt;/p&gt;</body>
+                  <redirectTo type="current_object"/>
+                  <screenActionLabel>
+                     <text>Done</text>
+                  </screenActionLabel>
+               </endScreen>
+               <endScreen id="lobo1fgu" outcomeId="outcome_1698596110798">
+                  <title>Lead is Not Qualified</title>
+                  <body contentType="text/html">&lt;p&gt;Lead is Not Qualified&lt;/p&gt;</body>
+                  <redirectTo type="current_object"/>
+                  <screenActionLabel>
+                     <text>Done</text>
+                  </screenActionLabel>
+               </endScreen>
+               <empty gatewayType="exclusive" id="loe8kixg">
+                  <actions/>
+               </empty>
+               <empty gatewayType="exclusive" id="lobo1fj9">
+                  <actions>
+                     <action alt="null" id="lobo1fj9_lobo1ffy" targetScreen="lobo1ffy">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </empty>
+               <empty gatewayType="exclusive" id="lobo1fkx">
+                  <actions>
+                     <action alt="" id="lobo1fkx_lobo1fj9" targetScreen="lobo1fj9">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </empty>
+               <jumpTo id="lobo1fmz" targetTitle="Lead is Not Qualified">
+                  <actions>
+                     <action alt="null" id="lobo1fmz_lobo1fgu" targetScreen="lobo1fgu">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </jumpTo>
+               <create id="lobo1fgx">
+                  <title>Task</title>
+                  <entityName>saleforce-new:Task</entityName>
+                  <createInput>
+                     <parameter id="loe8kiwp" name="WhoId" source="field" updatable="false">Id</parameter>
+                     <parameter id="loe8kiwq" name="Subject" source="constant" updatable="true">{$input.CurrentUser.Name} -  Initial call  with Lead</parameter>
+                     <parameter id="loe8kiwr" name="Status" source="constant" updatable="true">Completed</parameter>
+                     <parameter id="loe8kiws"
+                                name="Priority"
+                                source="constant"
+                                updatable="true">Normal</parameter>
+                     <parameter id="loe8kiwt"
+                                name="Description"
+                                source="screen"
+                                updatable="true">screen.Description</parameter>
+                  </createInput>
+                  <screen id="lobo1fgx-servicescreen">
+                     <title>Task</title>
+                     <body contentType="text/html">&lt;p&gt;&lt;span id="ae-sf-viewer-screen-body-description-field-label"&gt;Enter your notes from the phone call with Lead:&amp;nbsp;&lt;/span&gt; &lt;input class="" title="Edit a field to change the field properties." name="screen.Description" type="text" value="Description"&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;</body>
+                     <actionPrompt/>
+                     <actions/>
+                     <screenData skipIfRequiredFilled="false">
+                        <screenDataItem name="screen.Description"
+                                        readonly="false"
+                                        required="false"
+                                        type="textarea">
+                           <options>
+                              <option hide="true" name="length">32000</option>
+                              <option name="text_width">100</option>
+                              <option name="text_height">10</option>
+                              <option name="required">false</option>
+                              <option name="defaultvalue">Test call from the lead</option>
+                           </options>
+                        </screenDataItem>
+                     </screenData>
+                  </screen>
+                  <actions>
+                     <action alt="null" id="lobo1fgx_lobo1fj1" targetScreen="lobo1fj1">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </create>
+               <assignment id="lobo1fjv">
+                  <title>Update Lead status to qualified</title>
+                  <operation source="constant" to="Status">Working - Contacted</operation>
+                  <actions>
+                     <action alt="null" id="lobo1fjv_lobo1fko" targetScreen="lobo1fko">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </assignment>
+            </flow>
+         </avosScreenflow>
+      </types1:Entry>
+      <types1:GUID>9ywK7B3AgENjaUinI6XdwO</types1:GUID>
+      <types1:DisplayName>Guide_Test_1</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2023-11-10T04:36:14.858Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>
