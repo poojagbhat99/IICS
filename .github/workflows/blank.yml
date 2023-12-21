@@ -23,5 +23,5 @@ jobs:
       with:
         url: 'https://dm-ap.informaticacloud.com/saas/public/core/v3/login'
         method: 'POST'
-        customHeaders: '{"Content-Type": "application/json"}'
+        customHeaders: '{"Content-Type": "application/json","Accept": "application/json"}'
         data: '{"username": "amandar.hiller@gmail.com", "password": "Nous@1234"}'
